@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: raster-rover
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ROVER_MAX_DIM
+        value: "220"
